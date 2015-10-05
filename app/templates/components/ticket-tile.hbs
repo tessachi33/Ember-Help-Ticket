@@ -5,5 +5,5 @@
     <p align='right'><i>{{format-date ticket.timeIssued}}</i></p>
     <p align='right'><i>{{get-duration ticket.timeIssued}}</i></p>
     <hr>
-    <button {{action 'delete' ticket}} class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-trash"></i> Close ticket</button>
+    <button {{action 'archive' ticket}} class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-trash"></i> Close ticket</button>
 </div>
