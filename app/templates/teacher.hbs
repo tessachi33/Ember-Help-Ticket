@@ -1,6 +1,4 @@
 <div class='container'>
-  <!-- <h3>{{#link-to 'student'}}student{{/link-to}}</h3>
-  <h3>{{#link-to 'teacher'}}teacher{{/link-to}}</h3> -->
   {{#each model as |ticket|}}
     {{ticket-tile ticket=ticket destroyTicket='destroyTicket'}}
   {{/each}}
