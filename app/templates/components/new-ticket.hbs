@@ -1,14 +1,14 @@
-{{#if addNewTicket}}
+<!-- {{#if addNewTicket}}
   <div>
     <form>
       <div class="form-group">
         <label for="studentName">Student name</label>
-        {{input value=studentName id="studentName" class="form-control"}}
+        {{input value=studentName id="studentName" class="form-control" placeholder="Tell us who you are!"}}
       </div>
 
       <div class="form-group">
         <label for="issue">What do you need help with?</label>
-        {{textarea rows="5" value=issue id="issue" class="form-control" placeholder="Give us more information about your question... some background context is always nice! :)"}}
+        {{textarea rows="5" value=issue id="issue" class="form-control" placeholder="Give a brief description of the issue you are having. :)"}}
       </div>
 
       <button {{action 'save'}} class="btn btn-xs btn-success">Submit ticket</button>
@@ -17,4 +17,20 @@
   </div>
 {{else}}
   <button {{action 'showTicketForm'}} class="btn btn-xs btn-primary">Add a ticket</button>
-{{/if}}
+{{/if}} -->
+
+<div>
+  <form>
+    <div class="form-group">
+      <label for="studentName">Student name</label>
+      {{input value=studentName id="studentName" class="form-control" placeholder="Tell us who you are!"}}
+    </div>
+
+    <div class="form-group">
+      <label for="issue">What do you need help with?</label>
+      {{textarea rows="5" value=issue id="issue" class="form-control" placeholder="Give a brief description of the issue you are having. :)"}}
+    </div>
+
+    <button {{action 'save'}} class="btn btn-xs btn-success">Submit ticket</button>
+  </form>
+</div>

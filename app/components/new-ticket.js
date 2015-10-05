@@ -3,13 +3,13 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   addNewTicket: false,
   actions: {
-    showTicketForm() {
-      this.set('addNewTicket', true);
-    },
-
-    cancelNewTicket() {
-      this.set('addNewTicket', false);
-    },
+    // showTicketForm() {
+    //   this.set('addNewTicket', true);
+    // },
+    //
+    // cancelNewTicket() {
+    //   this.set('addNewTicket', false);
+    // },
 
     save() {
       var params = {
