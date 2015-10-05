@@ -1,0 +1,8 @@
+<div class='container'>
+  {{#each model as |ticket|}}
+    {{ticket-tile ticket=ticket destroyTicket='destroyTicket'}}
+  {{/each}}
+
+  {{new-ticket save='save'}}
+  <br><br><br>
+</div>

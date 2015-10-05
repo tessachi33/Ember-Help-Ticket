@@ -1,0 +1,11 @@
+{ "tickets": [{
+    "studentName": "Momo Ozawa",
+    "issue": "How does ember work?!"
+  }, {
+    "studentName": "Tessa Fletcher",
+    "issue": "Do you mind if I brush my teeth? :)"
+  }, {
+    "studentName": "Jake Kaad",
+    "issue": "What is the meaning of life? I think I drank too much coffee..."
+  }]
+}

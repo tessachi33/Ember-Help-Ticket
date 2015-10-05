@@ -1,0 +1,8 @@
+<div class='well'>
+    <h3>{{ticket.studentName}}</h3>
+    <hr>
+    <p>{{ticket.issue}}</p>
+    <p align='right'><i>{{format-date ticket.timeIssued}}</i></p>
+    <br>
+    <button {{action 'delete' ticket}} class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-trash"></i></button>
+</div>

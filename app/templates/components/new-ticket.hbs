@@ -1,0 +1,20 @@
+{{#if addNewTicket}}
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="studentName">Student name</label>
+        {{input value=studentName id="studentName" class="form-control"}}
+      </div>
+
+      <div class="form-group">
+        <label for="issue">What do you need help with?</label>
+        {{textarea rows="5" value=issue id="issue" class="form-control" placeholder="Give us more information about your question... some background context is always nice! :)"}}
+      </div>
+
+      <button {{action 'save'}} class="btn btn-xs btn-success">Submit ticket</button>
+      <button {{action 'cancelNewTicket'}} class="btn btn-xs btn-default">Cancel</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'showTicketForm'}} class="btn btn-xs btn-primary">Add a ticket</button>
+{{/if}}
