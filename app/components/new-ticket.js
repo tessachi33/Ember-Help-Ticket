@@ -9,6 +9,7 @@ export default Ember.Component.extend({
         timeIssued: Date.now()
       };
       this.sendAction('save', params);
+      alert("Thanks " + this.get('studentName') + "! We'll get right on it!");
     }
   }
 });
